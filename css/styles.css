@@ -147,35 +147,35 @@ h4 {
 
 #locations{
     margin-top: 60px;
-    width: 80%;
     justify-content: center;
     display: flex;
+    flex-basis: 90%;
+    flex-shrink: 0.8;
 }
 
 
 
 #locations .background-image{
-    min-height: 500px;
-    min-width: 100%;
-    flex-shrink: 0.5;
+
+    flex-basis: 90%;
+    flex-shrink: 0.8;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .background-image h2{
-    font-size: 25px;
-    width: 100%;
-    flex-basis: auto;
-
-    background-color: transparent;
+    font-weight: bolder;
+    font-size: 30px;
+    flex-basis: 100%;
+    background-color: black;
 }
 
 .bloque-locations{
     display: flex;
-    height: 250px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
     justify-content:center;
     background-color: transparent;
     
@@ -190,8 +190,8 @@ h4 {
 }
 
 .location{
-    min-width: 300px;
-    margin-left: 40px;
+    flex-basis: 300px;
+    margin: 20px;
     line-height: 70px;
 }
 
@@ -245,12 +245,6 @@ h4 {
         min-width: 150px;
     }
 
-    .location{
-        min-width: 200px;
-        margin-left: 20px;
-        line-height: 70px;
-        padding: 5px;
-    }
 
     .menu{
         justify-content: center;
