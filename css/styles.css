@@ -21,23 +21,26 @@ body{
 
 .header, .menu{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .header {
     border-bottom: 1px solid seashell;
-    height: 69px;
+    height: auto;
     position: fixed;
+    justify-content: center;
     align-items: center; /*los centra verticalmente*/
 }
 
 .logo{
     height: 50px;
     width: auto;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .menu {
+    width: 85%;
     justify-content: flex-end; /*coloca los elementos a la derecha*/
 }
 
@@ -50,7 +53,7 @@ body{
 /* Mission */
 
  #mission{
-    margin-top: 70px;
+    margin-top: 51px;
     flex-basis: 80%;
     flex-shrink: 0.8;
     display: flex;
@@ -248,4 +251,15 @@ h4 {
         line-height: 70px;
         padding: 5px;
     }
+
+    .menu{
+        justify-content: center;
+        width: 100%;
+    }
+
+    #mission{
+        margin-top: 79px;
+     
+    } 
 }
+
